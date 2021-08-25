@@ -6,7 +6,6 @@ const houses = <HTMLSelectElement>document.getElementById('houses');
 async function getData () {
   const response = await fetch(apiURL);
   const data = await response.json();
-  console.table(data);
 
   function fillData() {
     for (let index = 0; index < data.length; index++) {

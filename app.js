@@ -60,7 +60,6 @@ function getData() {
                     return [4 /*yield*/, response.json()];
                 case 2:
                     data = _a.sent();
-                    console.table(data);
                     if (charactersDiv.innerHTML === '') {
                         fillData();
                     }
