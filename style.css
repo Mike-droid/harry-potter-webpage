@@ -1,0 +1,44 @@
+body {
+  font-family: 'Yusei Magic', sans-serif;
+}
+
+.characters {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+}
+
+.character {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-width: 10px;
+  border-style: solid;
+  border-radius: 50px;
+}
+
+.character img {
+  width: 200px;
+}
+
+.Gryffindor {
+  background-color: #6a101a;
+  border-color:#f9c06c;
+}
+
+.Slytherin {
+  background-color: #2c803d;
+  border-color:#0f220f;
+}
+
+.Ravenclaw {
+  background-color: #17548c;
+  border-color:#957564;
+}
+
+.Hufflepuff {
+  background-color: #d8cf37;
+  border-color:#514c58;
+}
