@@ -1,0 +1,7 @@
+@media screen and (max-width: 768px) and (min-width: 480px) {
+  .characters {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+  }
+}

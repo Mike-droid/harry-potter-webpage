@@ -6,6 +6,7 @@ const houses = <HTMLSelectElement>document.getElementById('houses');
 async function getData () {
   const response = await fetch(apiURL);
   const data = await response.json();
+  console.table(data);
 
   function fillData() {
     for (let index = 0; index < data.length; index++) {
@@ -13,10 +14,8 @@ async function getData () {
         <div class="character ${houses.value}">
           <h2>${data[index].name}</h2>
           <img src="${data[index].image}" />
-          <p>Wand core: ${data[index].wand.core}</p>
-          <p>Wand length: ${data[index].wand.length} inches</p>
-          <p>Wand wood: ${data[index].wand.wood}</p>
-          <p>Patronus: ${data[index].patronus}</p>
+          <p>Ancestry: ${data[index].ancestry}</p>
+          <p>Date of birth: ${data[index].dateOfBirth}</p>
         </div>
       `
       if (data[index].house === houses.value) {

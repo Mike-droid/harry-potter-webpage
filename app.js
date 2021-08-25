@@ -42,7 +42,7 @@ function getData() {
     return __awaiter(this, void 0, void 0, function () {
         function fillData() {
             for (var index = 0; index < data.length; index++) {
-                var characterCard = "\n        <div class=\"character " + houses.value + "\">\n          <h2>" + data[index].name + "</h2>\n          <img src=\"" + data[index].image + "\" />\n          <p>Wand core: " + data[index].wand.core + "</p>\n          <p>Wand length: " + data[index].wand.length + " inches</p>\n          <p>Wand wood: " + data[index].wand.wood + "</p>\n          <p>Patronus: " + data[index].patronus + "</p>\n        </div>\n      ";
+                var characterCard = "\n        <div class=\"character " + houses.value + "\">\n          <h2>" + data[index].name + "</h2>\n          <img src=\"" + data[index].image + "\" />\n          <p>Ancestry: " + data[index].ancestry + "</p>\n          <p>Date of birth: " + data[index].dateOfBirth + "</p>\n        </div>\n      ";
                 if (data[index].house === houses.value) {
                     charactersDiv.innerHTML += characterCard;
                 }
@@ -60,6 +60,7 @@ function getData() {
                     return [4 /*yield*/, response.json()];
                 case 2:
                     data = _a.sent();
+                    console.table(data);
                     if (charactersDiv.innerHTML === '') {
                         fillData();
                     }

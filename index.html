@@ -6,20 +6,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hogwart's Houses</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mobile.css">
+  <link rel="stylesheet" href="tablet.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
 </head>
 <body>
   <h1>Hogwart's Houses</h1>
-  <select id="houses">
-    <option value="none">Select a house</option>
-    <option value="Gryffindor">Gryffindor</option>
-    <option value="Slytherin">Slytherin</option>
-    <option value="Hufflepuff">Hufflepuff</option>
-    <option value="Ravenclaw">Ravenclaw</option>
-  </select>
-  <button id="getData_button">Get characters from house</button>
+  <div class="controls">
+    <select id="houses">
+      <option value="none">Select a house</option>
+      <option value="Gryffindor">Gryffindor</option>
+      <option value="Slytherin">Slytherin</option>
+      <option value="Hufflepuff">Hufflepuff</option>
+      <option value="Ravenclaw">Ravenclaw</option>
+    </select>
+    <button id="getData_button">Get characters from house</button>
+  </div>
   <div class="characters" id="characters"></div>
   <script src="app.js"></script>
 </body>
