@@ -34,7 +34,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
-var apiURL = 'https://hp-api.herokuapp.com/api/characters';
+var apiURL = 'https://hp-api.onrender.com/api/characters';
 var charactersDiv = document.getElementById('characters');
 var getDataButton = document.getElementById('getData_button');
 var houses = document.getElementById('houses');
