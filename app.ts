@@ -1,4 +1,4 @@
-const apiURL: string = 'https://hp-api.herokuapp.com/api/characters';
+const apiURL: string = 'https://hp-api.onrender.com/api/characters';
 const charactersDiv = <HTMLDivElement>document.getElementById('characters');
 const getDataButton = <HTMLButtonElement>document.getElementById('getData_button');
 const houses = <HTMLSelectElement>document.getElementById('houses');
